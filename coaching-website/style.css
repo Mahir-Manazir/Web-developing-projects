@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Syne', sans-serif;
+    color: #FFC1CC;
+    background-color: #0e0b12;
+
+} 
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container h1 { 
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.container p{ 
+    font-size : 1.2rem;
+    margin-top: 10px;
+    color: #FFC0CB;
+} 
+
+
+.courses { 
+    display:flex;
+    justify-content: center;
+    gap: 24px; 
+    padding: 80px 40px;
+    
+}
+
+.card { 
+    background-color:#1a1025 ;
+    border: 1px solid #3a2a4a;
+    border-radius: 12 px;
+    padding: 32px; 
+    max-width: 300px; 
+}
+
+.card h2 { 
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card p { 
+    font-size: 0.9 rem; 
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+.ticker {
+    background-color: #1a1025;
+    padding: 16px 0;
+    overflow: hidden;
+    border-top: 1px solid #3a2a4a;
+    border-bottom: 1px solid #3a2a4a;
+} 
+
+.ticker-track { 
+    display: flex; 
+    gap: 80px; 
+    animation: scroll 10s linear infinite; 
+    white-space:nowrap
+}
+
+.ticker-track span { 
+    font-size: 1 rem; 
+    color: #FFC0CB; 
+    font-weight: 700;
+}
+
+@keyframes scroll { 
+    from {transform:translateX(100%)}
+    to {transform:translateX(-100%);}
+}
+
+.enroll { 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.enroll h2 { 
+    font-size: 2.5 rem;
+    font-weight: 800;
+}
+
+form { 
+    display: flex;
+    flex-direction: column; 
+    gap: 12 px;
+    width: 400px;
+}
+
+form input { 
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #1a1025;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Syne', sans-serif;
+}
+
+form button {
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FFC0CB;
+    color: #0e0b12;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Syne', sans-serif;
+}
+
+form button:hover {
+    background-color: #ffaabb;
+}
