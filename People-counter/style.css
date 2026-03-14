@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: plum;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, button {
+  margin: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: whitesmoke;
+  border: none;
+  border-radius: 30px;
+  margin-bottom:5px;
+}
+
+button:hover{ 
+    color: blueviolet;
+    cursor: pointer;
+}
+
+#increment-btn{ 
+    background-color: darkred;
+}
